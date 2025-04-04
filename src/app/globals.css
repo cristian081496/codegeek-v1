@@ -1,12 +1,71 @@
 @import "tailwindcss";
 
+/* Hide scrollbar but keep functionality */
+html {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+}
+
+html::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, and Opera */
+  width: 0;
+  background: transparent;
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
 }
-s
-body {
-  font-family: Arial, Helvetica, sans-serif;
+
+* {
+  font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+@theme {
+  --color-primary: #0D766E;
+  --color-darkPurple: #001B36;
+  --color-lightBlue: #D9E7FF;
+  --text-lg: 1.125rem;
+  --text-normal: 1rem;
+  --text-sm: .875rem;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+}
+
+
+@layer components {
+  h3 {
+    @apply text-center text-[28px] font-semibold text-[#2C3345] md:text-[39px];
+  }
+
+  .container {
+    @apply mx-auto block w-full !max-w-[1280px] px-0;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white py-2 rounded-lg cursor-pointer px-4 h-[42px] font-medium duration-200 hover:opacity-70;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent text-primary border-2 border-primary py-2 rounded-lg cursor-pointer px-4 h-[42px] font-medium duration-200 hover:bg-primary hover:text-white hover:opacity-70;
+  }
 }
