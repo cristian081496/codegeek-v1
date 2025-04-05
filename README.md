@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CodeGeek - IQ Testing Platform
+
+A modern, responsive web application for IQ testing and cognitive assessments. Built with Next.js and Tailwind CSS, featuring an elegant UI/UX design optimized for both desktop and mobile devices.
+
+## Project Structure
+
+```
+codegeek/
+├── public/                # Static assets and images
+│   └── images/            # Image assets used throughout the site
+├── src/
+│   ├── app/
+│   │   ├── components/    # Reusable UI components
+│   │   │   ├── Accordion.tsx       # Collapsible content component
+│   │   │   ├── AvailableTest.tsx   # Test options display
+│   │   │   ├── Footer.tsx          # Site footer
+│   │   │   ├── Header.tsx          # Navigation header
+│   │   │   ├── HeroSection.tsx     # Landing page hero section
+│   │   │   ├── Plans.tsx           # Subscription plans
+│   │   │   ├── Results.tsx         # Test results display
+│   │   │   ├── ScrollingBanner.tsx # Animated logo banner
+│   │   │   └── Section.tsx         # Reusable section container
+│   │   ├── data.ts        # Static data for components
+│   │   ├── globals.css    # Global styles and Tailwind directives
+│   │   ├── layout.tsx     # Root layout with metadata
+│   │   └── page.tsx       # Main landing page
+│   └── types/             # TypeScript type definitions
+├── package.json           # Project dependencies
+├── tailwind.config.js     # Tailwind CSS configuration
+└── tsconfig.json          # TypeScript configuration
+```
+
+## Key Features
+
+- **Interactive Components**: Accordion sections, dynamic buttons, and hover effects
+- **Custom Animations**: Infinite scrolling banner with pause-on-hover functionality
+- **Optimized Images**: Next.js Image component for optimized loading
+- **Accessibility**: Semantic HTML structure with proper ARIA attributes
+
+## Technology Stack
+
+- **Framework**: Next.js (App Router)
+- **Styling**: Tailwind CSS with custom configurations
+- **Icons**: React Icons library
+- **Deployment**: Ready for deployment on Vercel
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository and install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Mobile Optimization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The application uses a mobile-first approach with responsive Tailwind classes:
 
-## Learn More
+- Flexible layouts that adapt to different screen sizes
+- Touch-friendly interactive elements
+- Optimized spacing and typography for mobile reading
+- Component-specific responsive behavior (stacking, grid adjustments, etc.)
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is configured for easy deployment on Vercel:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+vercel
+```
 
-## Deploy on Vercel
+For other hosting platforms, build the production version:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm run start
+```
