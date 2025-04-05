@@ -32,7 +32,7 @@ const HeroSection = () => {
 
         <div className="flex items-center gap-4 mt-8">
           <div className="flex -space-x-6">
-            {/* User avatars overlapping */}
+            {/* User avatars overlappig */}
             <div className="w-[50px] h-[50px] rounded-full border-4 border-white overflow-hidden">
               <Image
                 src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
