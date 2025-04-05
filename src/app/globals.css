@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 /* Hide scrollbar but keep functionality */
 html {
@@ -29,13 +32,6 @@ html::-webkit-scrollbar {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 * {
   font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
@@ -47,14 +43,14 @@ html::-webkit-scrollbar {
   --text-lg: 1.125rem;
   --text-normal: 1rem;
   --text-sm: .875rem;
+  --text-4xl: 2.441rem;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
 }
 
-
 @layer components {
   h3 {
-    @apply text-center text-[28px] font-semibold text-[#2C3345] md:text-[39px];
+    @apply text-center text-[28px] leading-[45px] font-semibold text-[#2C3345] md:text-[39px];
   }
 
   .container {
@@ -67,5 +63,66 @@ html::-webkit-scrollbar {
 
   .btn-secondary {
     @apply bg-transparent text-primary border-2 border-primary py-2 rounded-lg cursor-pointer px-4 h-[42px] font-medium duration-200 hover:bg-primary hover:text-white hover:opacity-70;
+  }
+}
+
+/* Swiper Slider */
+
+.swiper-review .swiper-button-prev:after {
+  @apply text-xs font-bold text-primary hover:opacity-30;
+}
+
+.swiper-review .swiper-button-prev {
+  @apply left-0 justify-start;
+}
+
+.swiper-review .swiper-button-next:after {
+  @apply text-xs font-bold text-primary hover:opacity-30;
+}
+
+.swiper-review .swiper-button-next {
+  @apply right-0 justify-end;
+}
+
+@layer utilities {
+  .animate-accordion-down {
+    animation: accordion-down 0.2s ease-out;
+  }
+
+  .animate-accordion-up {
+    animation: accordion-up 0.2s ease-out;
+  }
+
+  @variants md {
+
+    .bg-group-2:nth-child(4n-3),
+    .bg-group-2:nth-child(4n-2) {
+      background-color: white;
+    }
+
+    .bg-group-2:nth-child(4n-1),
+    .bg-group-2:nth-child(4n) {
+      background-color: #F6FBFF;
+    }
+  }
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+
+  to {
+    height: 0;
   }
 }

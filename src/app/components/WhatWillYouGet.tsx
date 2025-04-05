@@ -9,7 +9,7 @@ const WhatWillYouGet = () => {
       {
         WHAT_WILL_YOU_GET.map((item) => (
           <div key={item.details} className="flex items-start rounded-lg bg-white border-1 border-lightBlue gap-4 p-4 md:py-6">
-            <RibbonCheckIcon />
+            <RibbonCheckIcon className="text-[#007AFF]" />
             <div className="text-sm text-[#2C3345]">{item.details}</div>
 
           </div>

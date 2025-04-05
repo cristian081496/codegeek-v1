@@ -10,7 +10,7 @@ const AvailableTest = () => {
     <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
       <div className="space-y-3 rounded-xl border-[#E2E8F0] border p-3 bg-white px-4 py-6">
         <BrainIcon />
-        <p className="text-[18px] font-semibold text-[#2C3345]">IQ / Intelligence Test</p>
+        <p className="text-lg font-semibold text-[#2C3345]">IQ / Intelligence Test</p>
         <div className="flex gap-4 text-sm text-[#454F69]">
           <div className="flex items-center gap-1.5">
             <FiClock className="text-normal" />
@@ -28,7 +28,7 @@ const AvailableTest = () => {
 
       <div className="space-y-3 rounded-xl border-[#E2E8F0] border p-3 bg-white px-4 py-6">
         <PersonalityIcon />
-        <p className="text-[18px] font-semibold text-[#2C3345]">Personality Type</p>
+        <p className="text-lg font-semibold text-[#2C3345]">Personality Type</p>
         <div className="flex gap-4 text-sm text-[#454F69]">
           <div className="flex items-center gap-1.5">
             <FiClock className="text-normal" />
@@ -46,7 +46,7 @@ const AvailableTest = () => {
 
       <div className="space-y-3 rounded-xl border-[#E2E8F0] border p-3 bg-white px-4 py-6">
         <CareerIcon />
-        <p className="text-[18px] font-semibold text-[#2C3345]">Career</p>
+        <p className="text-lg font-semibold text-[#2C3345]">Career</p>
         <div className="flex gap-4 text-sm text-[#454F69]">
           <div className="flex items-center gap-1.5">
             <FiClock className="text-normal" />
@@ -64,7 +64,7 @@ const AvailableTest = () => {
 
       <div className="space-y-3 rounded-xl border-[#E2E8F0] border p-3 bg-white px-4 py-6">
         <RelationsHandsIcon />
-        <p className="text-[18px] font-semibold text-[#2C3345]">Relationships</p>
+        <p className="text-lg font-semibold text-[#2C3345]">Relationships</p>
         <div className="flex gap-4 text-sm text-[#454F69]">
           <div className="flex items-center gap-1.5">
             <FiClock className="text-normal" />

@@ -19,7 +19,7 @@ const HeroSection = () => {
           <span className="inline-block bg-gradient-to-r from-[#27415F] via-[#007AFF] to-[#007AFF] bg-clip-text text-transparent">Real IQ Score?</span>
         </h1>
 
-        <p className="text-base leading-[25px] text-[#2B2D42] lg:max-w-[325px] lg:text-[18px]">Take our IQ test and unlock your path to self-discovery and development</p>
+        <p className="text-base leading-[25px] text-[#2B2D42] lg:max-w-[325px] lg:text-lg">Take our IQ test and unlock your path to self-discovery and development</p>
 
         <div className="mt-8 flex items-center gap-6">
           <button className="btn-primary flex items-center gap-5 h-[48px] rounded-xl px-8">

@@ -11,7 +11,7 @@ const BoostAbilities = () => {
           <div className="h-[42px] w-[42px] rounded-full bg-gradient-to-r from-[#007AFF] to-[#7CB7F8] p-[3px]">
             <div className="flex h-full w-full items-center justify-center rounded-full bg-white text-[20px] font-semibold text-[#2B2D42]">{index + 1}</div>
           </div>
-          <p className="text-[18px] font-semibold text-[#2C3345]">{ability.title}</p>
+          <p className="text-lg font-semibold text-[#2C3345]">{ability.title}</p>
 
           <ul className="space-y-2 p-1">
             {ability.checkList.map((check, checkIndex) => (
