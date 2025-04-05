@@ -2,7 +2,42 @@ import {
   PHFlagIcon,
   LiberiaFlagIcon,
   NatoFlagIcon,
+  BrainIcon,
+  PersonalityIcon,
+  CareerIcon,
+  RelationsHandsIcon,
 } from "@/app/components/Icons";
+
+export const AVAILABLE_TESTS = [
+  {
+    title: "IQ / Intelligence Test",
+    icon: BrainIcon,
+    description: "15 minutes, 25 questions",
+    button: "Start IQ Test Now",
+    available: true,
+  },
+  {
+    title: "Personality Type",
+    icon: PersonalityIcon,
+    description: "20 minutes, 30 questions",
+    button: "Coming Soon",
+    available: false,
+  },
+  {
+    title: "Career",
+    icon: CareerIcon,
+    description: "25 minutes, 35 questions",
+    button: "Coming Soon",
+    available: false,
+  },
+  {
+    title: "Relationships",
+    icon: RelationsHandsIcon,
+    description: "20 minutes, 30 questions",
+    button: "Coming Soon",
+    available: false,
+  },
+];
 
 export const BOOST_ABILITIES = [
   {
@@ -165,6 +200,16 @@ export const RESULTS = [
     name: "Ramos Rosa",
     icon: PHFlagIcon,
     IQ: 99,
+  },
+  {
+    name: "John Doe",
+    icon: LiberiaFlagIcon,
+    IQ: 101,
+  },
+  {
+    name: "Ramos Rosa",
+    icon: NatoFlagIcon,
+    IQ: 75,
   },
   {
     name: "John Doe",

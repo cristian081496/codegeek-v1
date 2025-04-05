@@ -5,7 +5,7 @@ import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { PiHeadset } from "react-icons/pi";
 
 const Footer = () => {
-  return <footer className="bg-darkPurple text-white py-6 md:py-12 mt-20">
+  return <footer className="bg-darkPurple text-white py-6 md:py-12 mt-15">
     <div className="container">
       <div className="w-full flex justify-between gap-8 border-b border-gray-500 pb-12">
         <div>

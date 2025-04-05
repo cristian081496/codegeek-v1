@@ -3,10 +3,10 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { FAQS } from "@/app/data";
 
 const Faq = () => {
-  return <section className="bg-[#F6FBFF] py-4 md:py-9">
+  return <section className="bg-[#F6FBFF] py-4 md:py-9 md:pt-10">
     <div className="container">
       <div className="relative mx-auto w-full gap-6 text-left lg:grid lg:grid-cols-[1fr_4fr] lg:gap-14">
-        <h3 className="text-left">Frequently Asked Questions</h3>
+        <h3 className="text-left leading-12">Frequently Asked Questions</h3>
 
         <Accordion type="multiple" className="w-full pt-4">
           {FAQS.map((faq) => (

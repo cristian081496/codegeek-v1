@@ -11,9 +11,9 @@ import { REVIEWS } from "../data";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const Reviews = () => {
-  return <Section title="Trusted by Millions Worldwide">
+  return <Section title="Trusted by Millions Worldwide" className="md:pt-11 md:pb-13">
     <>
-      <div className="!mx-10 relative group mb-[20px]">
+      <div className="!mx-10 relative group mb-[25px]">
         <div className="custom-nav-prev absolute left-[-40px] top-1/2 transform -translate-y-1/2 z-10 w-10 h-10 flex items-center justify-center cursor-pointer text-primary transition-all duration-300 hover:text-primary hover:opacity-70">
           <IoIosArrowBack className="text-xl" />
         </div>

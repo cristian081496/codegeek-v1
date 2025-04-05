@@ -22,7 +22,7 @@ const HeroSection = () => {
         <p className="text-base leading-[25px] text-[#2B2D42] lg:max-w-[325px] lg:text-lg">Take our IQ test and unlock your path to self-discovery and development</p>
 
         <div className="mt-8 flex items-center gap-6">
-          <button className="btn-primary flex items-center gap-5 h-[48px] rounded-xl px-8">
+          <button className="btn-primary flex items-center gap-6 w-[228.95px] h-[48px] tracking-tight font-semibold rounded-xl px-8">
             Start IQ Test Now <FaArrowRight className="h-3.5 w-3.5" />
           </button>
           <button className="btn-secondary h-[48px] rounded-2xl px-6">

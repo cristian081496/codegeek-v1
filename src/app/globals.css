@@ -58,11 +58,11 @@ html::-webkit-scrollbar {
   }
 
   .btn-primary {
-    @apply bg-primary text-white py-2 rounded-lg cursor-pointer px-4 h-[42px] font-medium duration-200 hover:opacity-70;
+    @apply bg-primary tracking-[-0.4px] text-white py-2 rounded-lg cursor-pointer px-4 h-[42px] font-semibold duration-200 hover:opacity-70;
   }
 
   .btn-secondary {
-    @apply bg-transparent text-primary border-2 border-primary py-2 rounded-lg cursor-pointer px-4 h-[42px] font-medium duration-200 hover:bg-primary hover:text-white hover:opacity-70;
+    @apply bg-transparent leading-none text-primary border-2 border-primary py-2 rounded-lg cursor-pointer px-4 h-[42px] font-medium duration-200 hover:bg-primary hover:text-white hover:opacity-70;
   }
 }
 
@@ -125,4 +125,24 @@ html::-webkit-scrollbar {
   to {
     height: 0;
   }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scrolling-banner {
+  display: inline-flex;
+  animation: scroll 20s linear infinite;
+  min-width: 100%;
+}
+
+.scrolling-banner:hover {
+  animation-play-state: paused;
 }

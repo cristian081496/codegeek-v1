@@ -3,8 +3,8 @@ import Section from "./ui/Section";
 import { RocketIcon, DetailedReportIcon, TestPaperIcon } from "./Icons";
 
 const HowItWorks = () => {
-  return <Section title="How it Works">
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+  return <Section title="How it Works" className="md:pt-7" >
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
       <div className="space-y-3 rounded-xl border-lightBlue border p-4 md:pb-9 md:px-8 md:pt-[42px]">
         <TestPaperIcon />
         <p className="text-lg font-semibold text-[#2C3345]">Take a Test</p>
