@@ -6,10 +6,10 @@ import { FaArrowRight } from "react-icons/fa";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 
 const HeroSection = () => {
-  return <section className="relative pt-14 lg:pt-[149px]">
+  return <section className="relative pt-14 lg:pt-[149px] pb-6 lg:pb-0">
     <div className="absolute -left-1/2 top-0 z-[-1] h-full w-[150vw] bg-gradient-to-b from-white via-[#EBF4FF] to-white"></div>
-    <div className="container grid grid-cols-2 gap-8">
-      <div className="space-y-4">
+    <div className="container px-5 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+      <div className="space-y-4 order-2 lg:order-none text-center lg:text-left">
 
         <h1 className="text-[32px] font-extrabold leading-[35px] md:text-[48px] md:leading-[57px]">
           <span className="inline-block bg-gradient-to-r from-[#2C3345] to-[#424D6A] bg-clip-text text-transparent">
@@ -21,16 +21,16 @@ const HeroSection = () => {
 
         <p className="text-base leading-[25px] text-[#2B2D42] lg:max-w-[325px] lg:text-lg">Take our IQ test and unlock your path to self-discovery and development</p>
 
-        <div className="mt-8 flex items-center gap-6">
-          <button className="btn-primary flex items-center gap-6 w-[228.95px] h-[48px] tracking-tight font-semibold rounded-xl px-8">
+        <div className="mt-6 lg:mt-8 flex flex-col lg:flex-row items-center gap-3 lg:gap-6">
+          <button className="btn-primary flex items-center justify-center lg:justify-start gap-3 lg:gap-6 w-full lg:w-[228.95px] max-w-[335px] h-[48px] tracking-tight font-semibold rounded-xl px-6 lg:px-8">
             Start IQ Test Now <FaArrowRight className="h-3.5 w-3.5" />
           </button>
-          <button className="btn-secondary h-[48px] rounded-2xl px-6">
+          <button className="btn-secondary w-full lg:w-auto max-w-[335px] h-[48px] rounded-2xl px-6">
             How It Works
           </button>
         </div>
 
-        <div className="flex items-center gap-4 mt-8">
+        <div className="hidden lg:flex items-center gap-4 mt-8">
           <div className="flex -space-x-6">
             {/* User avatars overlappig */}
             <div className="w-[50px] h-[50px] rounded-full border-4 border-white overflow-hidden">
@@ -96,13 +96,13 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="-mt-7">
+      <div className="order-1 lg:order-none lg:-mt-7 flex justify-center mb-4 lg:mb-0">
         <Image
           src="/images/main-graph.webp"
           alt="IQ Test Graph"
           width={800}
           height={400}
-          className="w-full max-w-[620.4px]"
+          className="w-full max-w-[335px] lg:max-w-[620.4px]"
           priority
         />
       </div>

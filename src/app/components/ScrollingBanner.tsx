@@ -31,7 +31,7 @@ const ScrollingBanner = () => {
         >
           <div className={`infinite-scroll-content flex ${isPaused ? 'paused' : ''}`}>
             {allLogos.map((LogoComponent, index) => (
-              <div key={index} className="flex items-center justify-center w-40 h-12 mx-4 flex-shrink-0 text-[#638FB1]">
+              <div key={index} className="flex items-center justify-center w-28 md:w-40 h-10 md:h-12 mx-3 md:mx-4 flex-shrink-0 text-[#638FB1]">
                 <LogoComponent />
               </div>
             ))}
@@ -45,7 +45,7 @@ const ScrollingBanner = () => {
         }
         
         .infinite-scroll-content {
-          animation: scrolling 8s linear infinite;
+          animation: scrolling 15s linear infinite;
           display: inline-flex;
           white-space: nowrap;
         }
@@ -59,7 +59,18 @@ const ScrollingBanner = () => {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(calc(-40px * ${logos.length} - 8px * ${logos.length} * 2));
+            transform: translateX(calc(-28px * ${logos.length} - 6px * ${logos.length} * 2));
+          }
+        }
+        
+        @media (min-width: 768px) {
+          @keyframes scrolling {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(calc(-40px * ${logos.length} - 8px * ${logos.length} * 2));
+            }
           }
         }
       `}</style>

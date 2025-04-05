@@ -5,15 +5,15 @@ import { PLANS } from "../data";
 
 const Plans = () => {
   return <Section title="Explore our plans" description="Discover our flexible offers and choose the one that best suits your learning and personal development journey." className="md:pt-12" desClass="!pt-2">
-    <div className="flex justify-center gap-4">
+    <div className="flex flex-col md:flex-row justify-center gap-5 md:gap-4 px-5 md:px-0">
       {PLANS.map((plan) => (
-        <div key={plan.title} className="rounded-xl border-[#E2E8F0] w-[362px] border p-3 bg-white py-6  shadow-2xl transition-all duration-300 hover:scale-105">
-          <div className="text-lg p-2 mb-4 pt-0 -mt-0 px-3 font-medium">{plan.title}</div>
+        <div key={plan.title} className="rounded-xl border-[#E2E8F0] w-full md:w-[362px] border p-3 bg-white py-6 shadow-lg md:shadow-2xl transition-all duration-300 hover:scale-105">
+          <div className="text-lg p-2 mb-4 pt-0 -mt-0 px-3 font-medium text-center md:text-left">{plan.title}</div>
 
           <hr className="border-none w-full h-[1px] bg-black" />
 
           <div className="p-3">
-            <div className="flex items-baseline gap-1 pt-2.5">
+            <div className="flex items-baseline gap-1 pt-2.5 justify-center md:justify-start">
               <span className="text-4xl font-bold leading-7 tracking-[-1px]">${plan.price}*</span>
               <span className="text-sm font-semibold text-[#8f8e94]">/{plan.frequency}</span>
             </div>
@@ -36,7 +36,7 @@ const Plans = () => {
         </div>
       ))}
     </div>
-    <div className="mt-4 text-center text-[15px] leading-5">*Visit our <a className="underline" href="https://myiq.com/en/pricing">pricing page</a> to find out more details.</div>
+    <div className="mt-4 text-center text-[15px] leading-5 px-4 md:px-0">*Visit our <a className="underline" href="https://myiq.com/en/pricing">pricing page</a> to find out more details.</div>
   </Section >;
 };
 

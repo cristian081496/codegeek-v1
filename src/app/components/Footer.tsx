@@ -5,9 +5,9 @@ import { FaFacebook, FaXTwitter } from "react-icons/fa6";
 import { PiHeadset } from "react-icons/pi";
 
 const Footer = () => {
-  return <footer className="bg-darkPurple text-white py-6 md:py-12 mt-15">
-    <div className="container">
-      <div className="w-full flex justify-between gap-8 border-b border-gray-500 pb-12">
+  return <footer className="bg-darkPurple text-white py-8 sm:py-6 md:py-12 mt-15">
+    <div className="container px-5 sm:px-0">
+      <div className="w-full flex flex-col sm:flex-row sm:justify-between gap-8 border-b border-gray-500 pb-8 sm:pb-12">
         <div>
           <div className="mb-6">
             <Image
@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex gap-20">
+        <div className="flex flex-col sm:flex-row gap-8 sm:gap-20">
           <div className="pr-5">
             <div className="text-lg font-semibold mb-4">Customer Support</div>
             <ul className="space-y-3 text-normal">
@@ -76,14 +76,14 @@ const Footer = () => {
 
 
       <div className="mt-6">
-        <div className="mb-4 w-full flex justify-end">
+        <div className="mb-4 w-full flex justify-center sm:justify-end">
           <select className="bg-transparent border-2 border-white rounded-lg text-sm py-2 w-[128px] h-[40px]">
             <option>English</option>
           </select>
         </div>
-        <div className="w-full flex items-center justify-between">
+        <div className="w-full flex flex-col sm:flex-row items-center gap-6 sm:gap-0 sm:justify-between">
 
-          <div className="text-md">
+          <div className="text-sm sm:text-md text-center sm:text-left">
             Copyright © 2024-2025 myIQ™. All rights reserved. All trademarks referenced herein are the properties of their respective owners.
           </div>
 
