@@ -9,7 +9,7 @@ const HeroSection = () => {
   return <section className="relative pt-14 lg:pt-[149px] pb-6 lg:pb-0">
     <div className="absolute -left-1/2 top-0 z-[-1] h-full w-[150vw] bg-gradient-to-b from-white via-[#EBF4FF] to-white"></div>
     <div className="container px-5 lg:px-0 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-      <div className="space-y-4 order-2 lg:order-none text-center lg:text-left">
+      <div className="space-y-4 order-2 lg:order-none lg:text-left">
 
         <h1 className="text-[32px] font-extrabold leading-[35px] md:text-[48px] md:leading-[57px]">
           <span className="inline-block bg-gradient-to-r from-[#2C3345] to-[#424D6A] bg-clip-text text-transparent">
